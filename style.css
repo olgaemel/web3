@@ -105,11 +105,13 @@ button {
 .logo {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .logo img {
   height: 80px;
-  width: auto;
+  width: 80px;
+  flex-shrink: 0;
 }
 
 /* Заголовок */
@@ -137,7 +139,7 @@ button {
 }
 
 .aside h2 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-bottom: 20px;
   color: #60322b;
 }
@@ -321,6 +323,27 @@ body.menu-open::after {
   z-index: 999;
 }
 
+@media (max-width: 1050px) {
+  .header-nav ul {
+    gap: 15px;
+  }
+
+  .header-nav li a {
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 850px) {
+  .header-nav ul {
+    gap: 10px;
+  }
+
+  .header-nav li a {
+    padding: 6px 14px;
+    font-size: 14px;
+  }
+}
+
 /* Мобильное меню */
 @media (max-width: 768px) {
   .header {
@@ -426,7 +449,8 @@ body.menu-open::after {
 
   .search-results h2,
   .about-me h2,
-  .services h2 {
+  .services h2,
+  .aside h2 {
     font-size: 1.5rem;
     margin-bottom: 20px;
     color: #60322b;
@@ -448,6 +472,7 @@ body.menu-open::after {
 
   .logo img {
     height: 60px;
+    width: 60px;
   }
 
   .search-results,
@@ -462,14 +487,16 @@ body.menu-open::after {
 
   .search-results h2,
   .about-me h2,
-  .services h2 {
+  .services h2,
+  .aside h2 {
     font-size: 1.3rem;
     margin-bottom: 10px;
   }
 
   .search-results h3,
   .about-me h3,
-  .services h3 {
+  .services h3,
+  .aside h3 {
     font-size: 1rem;
     margin-bottom: 10px;
   }
