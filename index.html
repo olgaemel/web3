@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Верстка сайтов и их оптимизация</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo"><img src="/logoweb2.png" alt="логотип" /></a>
+      <h1>Верстка сайтов и их оптимизация</h1>
+
+      <button class="menu-toggle" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="header-nav" aria-label="Основное меню">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <aside class="aside">
+        <h2>Последний пост Telegram:</h2>
+        <p>
+          Все программисты скоро будут кодить на iPad с веб-версией Visual
+          Studio Code.
+        </p>
+        <p>
+          Если интересно, как это будет, то смотри видео-обзор на приложение,
+          которое я потестировала с планшета и ноутбука.
+        </p>
+        <a href="https://t.me/frontendblok/2906">Перейти на канал</a>
+      </aside>
+
+      <main class="main">
+        <!-- Левая колонка -->
+        <div class="left-column">
+          <section class="search-results">
+            <h2>Результаты поиска по слову "вёрстка"</h2>
+            <article>
+              <h3><a href="#">Вёрстка сайтов под ключ</a></h3>
+              <p>
+                Мы создаем сайты за 1 месяц и дарим логотип в подарок
+                <a href="#">Далее</a>
+              </p>
+            </article>
+            <article>
+              <h3><a href="#">Научись верстать сайты быстро!</a></h3>
+              <p>
+                Подробный обучающий курс для новичков. Учим за 3 месяца.
+                <a href="#">Далее</a>
+              </p>
+            </article>
+            <article>
+              <h3><a href="#">Отмечаем ровно один год!</a></h3>
+              <p>
+                Наша школа за этот год обучила вёрстке уже 1000 студентов!
+                <a href="#">Далее</a>
+              </p>
+            </article>
+          </section>
+
+          <section class="about-me">
+            <h2>Обо мне</h2>
+            <article>
+              <h3>Портфолио проектов</h3>
+              <p>
+                Довольно «острой» теме, которая связана с позиционированием
+                элементов... <a href="#">Читать далее</a>
+              </p>
+            </article>
+          </section>
+        </div>
+
+        <!-- Правая колонка -->
+        <div class="right-column">
+          <section class="services">
+            <h2>Услуги</h2>
+            <!-- Измените заголовок! -->
+            <article>
+              <h3>Вёрстка под ключ</h3>
+              <p>
+                Полный цикл разработки сайтов любой сложности...
+                <a href="#">Подробнее</a>
+              </p>
+            </article>
+            <article>
+              <h3>Оптимизация</h3>
+              <p>
+                Ускорение работы существующих сайтов...
+                <a href="#">Подробнее</a>
+              </p>
+            </article>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; Базовый курс по вёрстке от FrontendBlok</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
