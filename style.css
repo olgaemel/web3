@@ -442,10 +442,6 @@ body.menu-open::after {
 
 /* Дополнительные медиа-запросы */
 @media (max-width: 480px) {
-  html,
-  body {
-    font-size: 14px;
-  }
   .header {
     padding: 10px 15px;
   }
