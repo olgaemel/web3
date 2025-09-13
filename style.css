@@ -295,6 +295,10 @@ button {
 }
 
 /* Анимация гамбургера в крестик */
+.menu-toggle.active {
+  transform: translateY(-50px); /* Поднимаем весь крестик */
+}
+
 .menu-toggle.active span:nth-child(1) {
   transform: rotate(45deg) translate(6px, 6px);
 }
@@ -378,7 +382,7 @@ body.menu-open::after {
     visibility: hidden;
     transition: all 0.4s ease;
     z-index: 1000;
-    padding: 80px 20px 20px;
+    padding: 80px 20px 40px;
   }
 
   .header-nav.active {
